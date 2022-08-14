@@ -1,10 +1,10 @@
 <?php
-//configuraçoes do banco de dados
-
+session_start();
+//CONFIGURAÇÕES DO BANCO DE DADOS
 define('SERVIDOR','localhost');
 define('USUARIO','root');
 define('SENHA','');
-define('BANCO','login-poo');
+define('BANCO','login');
 
 function limpaPost($dados){
     $dados = trim($dados);
@@ -12,5 +12,3 @@ function limpaPost($dados){
     $dados = htmlspecialchars($dados);
     return $dados;
 }
-
-?>
